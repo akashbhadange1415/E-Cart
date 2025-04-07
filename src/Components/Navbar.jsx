@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { items } from './Data';
 import { FaCartArrowDown } from "react-icons/fa";
 import { FaSearchDollar } from "react-icons/fa";
+import './Navabar.css';
 
 const Navbar = ({ setData,cart }) => {
 const location =useLocation()

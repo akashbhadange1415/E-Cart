@@ -1,0 +1,43 @@
+/* Make nav-bar stack vertically on small screens */
+@media (max-width: 768px) {
+    .nav-bar {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      gap: 10px;
+    }
+  
+    .brand {
+      width: 100%;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  
+    .search-bar {
+      width: 100%;
+    }
+  
+    .search-bar input {
+      width: 90%;
+      margin: 0 auto;
+      display: block;
+    }
+  
+    .cart {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .nav-bar-wraper {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      gap: 8px;
+    }
+  
+    .nav-bar-wraper .items {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  

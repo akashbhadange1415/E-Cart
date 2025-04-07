@@ -2,6 +2,9 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ToastContainer, toast, Bounce } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import './Product.css';
+
+
 
 const Product = ({ items, cart, setCart }) => {
 
@@ -29,6 +32,7 @@ const Product = ({ items, cart, setCart }) => {
     return (
         <>
             <ToastContainer />
+            <div className='product-bg'>
             <div className="container my-5">
                 <div className="row">
                     {items.map((product) => (
@@ -55,6 +59,7 @@ const Product = ({ items, cart, setCart }) => {
                         </div>
                     ))}
                 </div>
+            </div>
             </div>
         </>
     );
