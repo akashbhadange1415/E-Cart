@@ -49,19 +49,34 @@ input::placeholder{
 }
 
 
-.img{
+.img {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.img img{
+
+.img img {
   width: 350px;
   height: 350px;
 }
 
-.con{
+.con {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 4rem;
+}
+
+/* 🌐 Media Query for Mobile Devices */
+@media (max-width: 850px) {
+  .img img {
+    width: 90%;    
+    height: auto; 
+  }
+
+  .con {
+    flex-direction: column; 
+    gap: 2rem;              
+    padding: 1rem;
+  }
 }
